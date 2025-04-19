@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply | Bennett Hatchery</title>
+  <meta name="description" content="Apply to Bennett Hatchery's incubation and acceleration programs for your startup.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/apply.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <h1>Bennett <span>Hatchery</span></h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="apply.html" class="active">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Apply to Bennett Hatchery</h1>
+        <p>Take the first step towards turning your innovative ideas into a successful startup</p>
+      </div>
+    </section>
+
+    <!-- Programs Overview -->
+    <section class="apply-overview">
+      <div class="container">
+        <div class="apply-content">
+          <div class="apply-text">
+            <h2>Join Our Startup Ecosystem</h2>
+            <p>Bennett Hatchery offers comprehensive support programs for entrepreneurs at every stage of their journey. Whether you have just an idea or an established startup looking to scale, we have the resources, mentorship, and community to help you succeed.</p>
+            <p>Select the program that best matches your current stage and complete the application form. Our team reviews applications on a rolling basis, and we'll get back to you within two weeks.</p>
+          </div>
+          
+          <div class="apply-stats">
+            <div class="stat-item">
+              <h3>50+</h3>
+              <p>Startups Incubated</p>
+            </div>
+            <div class="stat-item">
+              <h3>₹1.2 Cr+</h3>
+              <p>Funding Raised</p>
+            </div>
+            <div class="stat-item">
+              <h3>30+</h3>
+              <p>Industry Mentors</p>
+            </div>
+            <div class="stat-item">
+              <h3>85%</h3>
+              <p>Success Rate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Selection -->
+    <section class="program-selection bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Choose Your Program</h2>
+          <p>Select the program that best fits your startup's current stage</p>
+        </div>
+        
+        <div class="program-cards">
+          <div class="program-card" id="ideationCard">
+            <div class="program-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Ideation Program</h3>
+            <p>For early-stage ideas that need refinement and validation</p>
+            <ul class="program-features">
+              <li><i class="fas fa-check-circle"></i> 4-week structured workshop</li>
+              <li><i class="fas fa-check-circle"></i> Problem validation</li>
+              <li><i class="fas fa-check-circle"></i> Market research support</li>
+              <li><i class="fas fa-check-circle"></i> Business model development</li>
+              <li><i class="fas fa-check-circle"></i> Pitch preparation</li>
+            </ul>
+            <button class="btn btn-primary select-program-btn" data-program="ideation">Select Ideation</button>
+          </div>
+          
+          <div class="program-card" id="incubationCard">
+            <div class="program-icon featured-program">
+              <span class="featured-label">Most Popular</span>
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Incubation Program</h3>
+            <p>For validated ideas ready to build and launch</p>
+            <ul class="program-features">
+              <li><i class="fas fa-check-circle"></i> 6-month comprehensive support</li>
+              <li><i class="fas fa-check-circle"></i> Workspace and infrastructure</li>
+              <li><i class="fas fa-check-circle"></i> Dedicated mentorship</li>
+              <li><i class="fas fa-check-circle"></i> Seed funding (up to ₹5 lakhs)</li>
+              <li><i class="fas fa-check-circle"></i> Legal and technical support</li>
+            </ul>
+            <button class="btn btn-primary select-program-btn" data-program="incubation">Select Incubation</button>
+          </div>
+          
+          <div class="program-card" id="accelerationCard">
+            <div class="program-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Acceleration Program</h3>
+            <p>For existing startups looking to scale</p>
+            <ul class="program-features">
+              <li><i class="fas fa-check-circle"></i> 3-month intensive program</li>
+              <li><i class="fas fa-check-circle"></i> Growth strategy development</li>
+              <li><i class="fas fa-check-circle"></i> Investor connections</li>
+              <li><i class="fas fa-check-circle"></i> Market expansion support</li>
+              <li><i class="fas fa-check-circle"></i> Advanced mentorship</li>
+            </ul>
+            <button class="btn btn-primary select-program-btn" data-program="acceleration">Select Acceleration</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form" id="applicationForm">
+      <div class="container">
+        <div class="section-header">
+          <h2>Application Form</h2>
+          <p>Please fill out the form below to apply for <span id="selectedProgram">your selected program</span></p>
+        </div>
+        
+        <div class="form-container">
+          <form id="startupApplicationForm">
+            <!-- Program Selection (Hidden Field) -->
+            <input type="hidden" id="programType" name="programType" value="">
+            
+            <!-- Personal Information -->
+            <div class="form-section">
+              <h3>Personal Information</h3>
+              
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="age">Age *</label>
+                  <input type="number" id="age" name="age" min="16" max="100" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="occupation">Current Occupation *</label>
+                  <select id="occupation" name="occupation" required>
+                    <option value="">Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="employed">Employed</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="education">Educational Background *</label>
+                  <input type="text" id="education" name="education" placeholder="e.g., B.Tech in Computer Science, Bennett University" required>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="experience">Relevant Experience</label>
+                  <textarea id="experience" name="experience" rows="3" placeholder="Brief description of your relevant work or entrepreneurial experience"></textarea>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Startup/Idea Information -->
+            <div class="form-section">
+              <h3>Startup/Idea Information</h3>
+              
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="startupName">Startup/Idea Name *</label>
+                  <input type="text" id="startupName" name="startupName" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="industry">Industry *</label>
+                  <select id="industry" name="industry" required>
+                    <option value="">Select an option</option>
+                    <option value="edtech">EdTech</option>
+                    <option value="healthtech">HealthTech</option>
+                    <option value="fintech">FinTech</option>
+                    <option value="ecommerce">E-Commerce</option>
+                    <option value="saas">SaaS</option>
+                    <option value="ai">AI & ML</option>
+                    <option value="iot">IoT</option>
+                    <option value="agritech">AgriTech</option>
+                    <option value="cleantech">CleanTech</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                
+                <div class="form-group" id="otherIndustryField" style="display: none;">
+                  <label for="otherIndustry">Specify Industry *</label>
+                  <input type="text" id="otherIndustry" name="otherIndustry">
+                </div>
+                
+                <div class="form-group">
+                  <label for="stage">Current Stage *</label>
+                  <select id="stage" name="stage" required>
+                    <option value="">Select an option</option>
+                    <option value="idea">Idea Stage</option>
+                    <option value="prototype">Prototype/MVP</option>
+                    <option value="early-users">Early Users/Customers</option>
+                    <option value="revenue">Revenue Generating</option>
+                    <option value="scaling">Scaling</option>
+                  </select>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="problemStatement">Problem Statement *</label>
+                  <textarea id="problemStatement" name="problemStatement" rows="3" placeholder="What problem are you solving?" required></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="solution">Your Solution *</label>
+                  <textarea id="solution" name="solution" rows="3" placeholder="How does your product/service solve this problem?" required></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="targetMarket">Target Market *</label>
+                  <textarea id="targetMarket" name="targetMarket" rows="3" placeholder="Who are your target customers?" required></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="businessModel">Business Model *</label>
+                  <textarea id="businessModel" name="businessModel" rows="3" placeholder="How will your startup generate revenue?" required></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="competitiveAdvantage">Competitive Advantage *</label>
+                  <textarea id="competitiveAdvantage" name="competitiveAdvantage" rows="3" placeholder="What makes your solution unique compared to alternatives?" required></textarea>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Team Information -->
+            <div class="form-section">
+              <h3>Team Information</h3>
+              
+              <div class="form-group">
+                <label for="teamSize">Team Size *</label>
+                <select id="teamSize" name="teamSize" required>
+                  <option value="">Select an option</option>
+                  <option value="solo">Solo Founder</option>
+                  <option value="2-3">2-3 Members</option>
+                  <option value="4-5">4-5 Members</option>
+                  <option value="6+">6+ Members</option>
+                </select>
+              </div>
+              
+              <div class="form-group full-width">
+                <label for="teamDetails">Key Team Members & Their Roles</label>
+                <textarea id="teamDetails" name="teamDetails" rows="4" placeholder="Please mention the names, roles, and brief backgrounds of key team members"></textarea>
+              </div>
+              
+              <div class="form-group full-width">
+                <label for="skillGaps">Skill Gaps (if any)</label>
+                <textarea id="skillGaps" name="skillGaps" rows="3" placeholder="Are there any key skills or roles that you're looking to add to your team?"></textarea>
+              </div>
+            </div>
+            
+            <!-- Additional Information -->
+            <div class="form-section">
+              <h3>Additional Information</h3>
+              
+              <div class="form-grid">
+                <div class="form-group full-width">
+                  <label for="currentProgress">Current Progress & Traction *</label>
+                  <textarea id="currentProgress" name="currentProgress" rows="3" placeholder="What have you accomplished so far? Any users, customers, or revenue?" required></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="supportNeeded">Support Needed *</label>
+                  <textarea id="supportNeeded" name="supportNeeded" rows="3" placeholder="What specific support are you looking for from Bennett Hatchery?" required></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="goals">6-Month Goals *</label>
+                  <textarea id="goals" name="goals" rows="3" placeholder="What do you hope to achieve in the next 6 months?" required></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="fundingStatus">Funding Status</label>
+                  <select id="fundingStatus" name="fundingStatus">
+                    <option value="">Select an option</option>
+                    <option value="bootstrapped">Bootstrapped</option>
+                    <option value="friends-family">Friends & Family</option>
+                    <option value="angel">Angel Investment</option>
+                    <option value="seed">Seed Funding</option>
+                    <option value="series-a">Series A or later</option>
+                    <option value="grant">Grant/Competition</option>
+                  </select>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="previousAccelerators">Previous Incubators/Accelerators (if any)</label>
+                  <input type="text" id="previousAccelerators" name="previousAccelerators">
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="additionalInfo">Anything Else You'd Like to Share</label>
+                  <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                  <label for="referral">How did you hear about Bennett Hatchery?</label>
+                  <select id="referral" name="referral">
+                    <option value="">Select an option</option>
+                    <option value="website">Website</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="event">Event</option>
+                    <option value="friend">Friend/Colleague</option>
+                    <option value="faculty">Faculty Member</option>
+                    <option value="alumni">Alumni</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Links -->
+            <div class="form-section">
+              <h3>Links & Uploads</h3>
+              
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="website">Website/Landing Page</label>
+                  <input type="url" id="website" name="website" placeholder="https://...">
+                </div>
+                
+                <div class="form-group">
+                  <label for="pitchDeck">Pitch Deck Link (Google Drive, Dropbox, etc.)</label>
+                  <input type="url" id="pitchDeck" name="pitchDeck" placeholder="https://...">
+                </div>
+                
+                <div class="form-group">
+                  <label for="linkedin">LinkedIn Profile</label>
+                  <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/...">
+                </div>
+                
+                <div class="form-group">
+                  <label for="github">GitHub Profile (if applicable)</label>
+                  <input type="url" id="github" name="github" placeholder="https://github.com/...">
+                </div>
+              </div>
+              
+              <div class="form-note mt-3">
+                <p><i class="fas fa-info-circle"></i> Note: You'll have the opportunity to upload additional documents after your initial application is reviewed.</p>
+              </div>
+            </div>
+            
+            <!-- Terms and Conditions -->
+            <div class="form-section">
+              <div class="checkbox-group">
+                <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                <label for="termsAgreement">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> of Bennett Hatchery.</label>
+              </div>
+              
+              <div class="checkbox-group">
+                <input type="checkbox" id="infoAccuracy" name="infoAccuracy" required>
+                <label for="infoAccuracy">I confirm that all information provided is accurate and complete to the best of my knowledge.</label>
+              </div>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Submit Application</button>
+            </div>
+          </form>
+          
+          <!-- Success Message (Hidden by Default) -->
+          <div id="applicationSuccess" class="application-success" style="display: none;">
+            <div class="success-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Application Submitted Successfully!</h3>
+            <p>Thank you for applying to Bennett Hatchery. We've received your application and will review it carefully.</p>
+            <p>You'll receive a confirmation email shortly, and our team will contact you within 2 weeks regarding the next steps.</p>
+            <div class="success-actions">
+              <a href="index.html" class="btn btn-secondary">Return to Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="apply-faq bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about our application process</p>
+        </div>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What are the eligibility criteria for applying?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>While we prioritize applications from Bennett University students and alumni, our programs are open to all entrepreneurs with innovative ideas and a commitment to building scalable businesses. We evaluate applications based on the strength of the idea, market potential, and team capabilities.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How long does the application process take?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Our initial review takes up to 2 weeks. If shortlisted, you'll be invited for an interview within the following week. The entire process from application to final decision typically takes 3-4 weeks.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I apply if my idea is still in the conceptual stage?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes! Our Ideation Program is specifically designed for early-stage ideas that need refinement and validation. We'll help you develop your concept, validate the problem-solution fit, and prepare for the next stage of development.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do I need to have a complete team to apply?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>While having a diverse team with complementary skills is beneficial, solo founders are also welcome to apply. If accepted, we can help connect you with potential co-founders or team members as needed.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is there any cost to participate in the programs?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Our programs are offered at no monetary cost to participants. Instead, Bennett Hatchery may take a small equity stake (typically 2-5%) in startups accepted into the Incubation or Acceleration programs. The Ideation Program is completely free with no equity requirement.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-4">
+          <p>Have more questions? Check our <a href="faq.html">complete FAQ</a> or <a href="contact.html">contact us</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Begin Your Entrepreneurial Journey?</h2>
+          <p>Join Bennett Hatchery and transform your innovative ideas into successful ventures.</p>
+          <a href="#applicationForm" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Bennett <span>Hatchery</span></h2>
+          <p>Nurturing innovation at Bennett University</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="startups.html">Startups</a></li>
+              <li><a href="apply.html">Apply</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="mentors.html">Mentors</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> Plot No 8-11, Tech Zone II, Greater Noida, UP 201310</li>
+              <li><i class="fas fa-phone"></i> +91-1800-103-8484</li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:hatchery@bennett.edu.in">hatchery@bennett.edu.in</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Bennett Hatchery. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="js/main.js"></script>
+  <script src="js/apply.js"></script>
+</body>
+</html>

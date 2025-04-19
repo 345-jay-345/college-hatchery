@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bennett Hatchery | Home</title>
+  <meta name="description" content="Bennett Hatchery - Incubating tomorrow's innovators">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <h1>Bennett <span>Hatchery</span></h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Turning Ideas into Impactful Startups</h1>
+            <p>Bennett Hatchery is the startup incubator at Bennett University, nurturing student entrepreneurs and innovative ideas.</p>
+            <div class="hero-buttons">
+              <a href="apply.html" class="btn btn-primary">Apply Now</a>
+              <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="hero-image-gradient"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Startups Incubated</p>
+          </div>
+          <div class="stat-item">
+            <h3>₹1.2 Cr+</h3>
+            <p>Funding Raised</p>
+          </div>
+          <div class="stat-item">
+            <h3>30+</h3>
+            <p>Industry Mentors</p>
+          </div>
+          <div class="stat-item">
+            <h3>85%</h3>
+            <p>Success Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Startups -->
+    <section class="featured-startups">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Startups</h2>
+          <p>Meet some of the innovative startups incubated at Bennett Hatchery</p>
+        </div>
+        <div class="startups-grid" id="startupsGrid">
+          <!-- Startup cards will be inserted here by JavaScript -->
+        </div>
+        <div class="text-center">
+          <a href="startups.html" class="btn btn-secondary">View All Startups</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Preview -->
+    <section class="programs-preview">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Programs</h2>
+          <p>Comprehensive support for entrepreneurs at every stage</p>
+        </div>
+        <div class="programs-grid">
+          <div class="program-card">
+            <div class="program-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Ideation Workshop</h3>
+            <p>Transform your ideas into viable business concepts through our structured ideation process.</p>
+            <a href="programs.html#ideation" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="program-card">
+            <div class="program-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Incubation Program</h3>
+            <p>Get comprehensive support including mentorship, workspace, and resources for your startup.</p>
+            <a href="programs.html#incubation" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="program-card">
+            <div class="program-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Acceleration Program</h3>
+            <p>Scale your existing startup with targeted mentorship and market access strategies.</p>
+            <a href="programs.html#acceleration" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Success Stories</h2>
+          <p>Hear from the entrepreneurs who have been through our programs</p>
+        </div>
+        <div class="testimonial-slider" id="testimonialSlider">
+          <!-- Testimonials will be inserted here by JavaScript -->
+        </div>
+        <div class="slider-controls">
+          <button id="prevTestimonial" class="slider-btn"><i class="fas fa-arrow-left"></i></button>
+          <button id="nextTestimonial" class="slider-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Start Your Entrepreneurial Journey?</h2>
+          <p>Join Bennett Hatchery and transform your innovative ideas into successful startups.</p>
+          <a href="apply.html" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Bennett <span>Hatchery</span></h2>
+          <p>Nurturing innovation at Bennett University</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="startups.html">Startups</a></li>
+              <li><a href="apply.html">Apply</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="mentors.html">Mentors</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> Plot No 8-11, Tech Zone II, Greater Noida, UP 201310</li>
+              <li><i class="fas fa-phone"></i> +91-1800-103-8484</li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:hatchery@bennett.edu.in">hatchery@bennett.edu.in</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Bennett Hatchery. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Added the required Lovable script tag -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

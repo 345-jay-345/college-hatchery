@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources | Bennett Hatchery</title>
+  <meta name="description" content="Access valuable resources for entrepreneurs at Bennett Hatchery.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/resources.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <h1>Bennett <span>Hatchery</span></h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html" class="active">Resources</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Entrepreneur Resources</h1>
+        <p>Valuable tools, guides, and materials to support your entrepreneurial journey</p>
+      </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="resource-categories">
+      <div class="container">
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="all">All Resources</button>
+          <button class="category-tab" data-category="guides">Guides & Templates</button>
+          <button class="category-tab" data-category="tools">Tools & Software</button>
+          <button class="category-tab" data-category="learning">Learning Materials</button>
+          <button class="category-tab" data-category="funding">Funding Resources</button>
+          <button class="category-tab" data-category="legal">Legal Resources</button>
+        </div>
+        
+        <div class="resource-search">
+          <input type="text" id="resourceSearch" placeholder="Search resources...">
+          <button id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Grid -->
+    <section class="resources-grid-section">
+      <div class="container">
+        <div class="resources-grid" id="resourcesGrid">
+          <!-- Guides & Templates -->
+          <div class="resource-card" data-category="guides">
+            <div class="resource-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Business Plan Template</h3>
+              <p>A comprehensive template for creating a professional business plan with guidance for each section.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Template</span>
+                <span class="resource-format">DOCX, PDF</span>
+              </div>
+              <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="guides">
+            <div class="resource-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Financial Projection Toolkit</h3>
+              <p>Excel templates for creating financial projections, cash flow forecasts, and break-even analysis.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Template</span>
+                <span class="resource-format">XLSX</span>
+              </div>
+              <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="guides">
+            <div class="resource-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Startup Launch Checklist</h3>
+              <p>A comprehensive checklist covering all the essential tasks for launching your startup successfully.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Guide</span>
+                <span class="resource-format">PDF</span>
+              </div>
+              <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="guides">
+            <div class="resource-icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Marketing Strategy Guide</h3>
+              <p>Step-by-step guide to creating an effective marketing strategy for your startup on a limited budget.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Guide</span>
+                <span class="resource-format">PDF</span>
+              </div>
+              <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+          
+          <!-- Tools & Software -->
+          <div class="resource-card" data-category="tools">
+            <div class="resource-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Developer Tools Pack</h3>
+              <p>Discounted access to essential development tools and platforms for technical startups.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Software</span>
+                <span class="resource-format">Various</span>
+              </div>
+              <a href="#" class="resource-link">Access <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="tools">
+            <div class="resource-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Project Management Suite</h3>
+              <p>Special startup offers for popular project management and team collaboration tools.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Software</span>
+                <span class="resource-format">Web, Mobile</span>
+              </div>
+              <a href="#" class="resource-link">Access <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="tools">
+            <div class="resource-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Design Tools</h3>
+              <p>Free and discounted design tools for creating your brand, website, and marketing materials.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Software</span>
+                <span class="resource-format">Various</span>
+              </div>
+              <a href="#" class="resource-link">Access <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <!-- Learning Materials -->
+          <div class="resource-card" data-category="learning">
+            <div class="resource-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Entrepreneurship Course</h3>
+              <p>Comprehensive online course covering the fundamentals of entrepreneurship and startup management.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Course</span>
+                <span class="resource-format">Video, PDF</span>
+              </div>
+              <a href="#" class="resource-link">Access <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="learning">
+            <div class="resource-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Startup eBook Collection</h3>
+              <p>A curated collection of eBooks covering various aspects of building and scaling a startup.</p>
+              <div class="resource-meta">
+                <span class="resource-type">eBooks</span>
+                <span class="resource-format">PDF, EPUB</span>
+              </div>
+              <a href="#" class="resource-link">Access <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="learning">
+            <div class="resource-icon">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Founder Interview Series</h3>
+              <p>Video interviews with successful founders sharing their experiences, challenges, and advice.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Videos</span>
+                <span class="resource-format">MP4</span>
+              </div>
+              <a href="#" class="resource-link">Watch <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <!-- Funding Resources -->
+          <div class="resource-card" data-category="funding">
+            <div class="resource-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Investor Database</h3>
+              <p>Curated list of angel investors, venture capital firms, and other funding sources for startups.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Database</span>
+                <span class="resource-format">XLSX, PDF</span>
+              </div>
+              <a href="#" class="resource-link">Access <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="funding">
+            <div class="resource-icon">
+              <i class="fas fa-file-invoice"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Grant Application Guide</h3>
+              <p>Comprehensive guide to finding and applying for startup grants and government funding programs.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Guide</span>
+                <span class="resource-format">PDF</span>
+              </div>
+              <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="funding">
+            <div class="resource-icon">
+              <i class="fas fa-presentation"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Pitch Deck Templates</h3>
+              <p>Professional pitch deck templates and examples from successful startups that raised funding.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Templates</span>
+                <span class="resource-format">PPTX, PDF</span>
+              </div>
+              <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+          
+          <!-- Legal Resources -->
+          <div class="resource-card" data-category="legal">
+            <div class="resource-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Legal Document Templates</h3>
+              <p>Essential legal document templates for startups, including incorporation, contracts, and agreements.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Templates</span>
+                <span class="resource-format">DOCX, PDF</span>
+              </div>
+              <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="legal">
+            <div class="resource-icon">
+              <i class="fas fa-gavel"></i>
+            </div>
+            <div class="resource-content">
+              <h3>Startup Legal Guide</h3>
+              <p>Comprehensive guide to legal considerations for startups in India, from formation to compliance.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Guide</span>
+                <span class="resource-format">PDF</span>
+              </div>
+              <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+          
+          <div class="resource-card" data-category="legal">
+            <div class="resource-icon">
+              <i class="fas fa-trademark"></i>
+            </div>
+            <div class="resource-content">
+              <h3>IP Protection Guide</h3>
+              <p>Guide to protecting your intellectual property, including patents, trademarks, and copyrights.</p>
+              <div class="resource-meta">
+                <span class="resource-type">Guide</span>
+                <span class="resource-format">PDF</span>
+              </div>
+              <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div id="noResults" class="no-results" style="display: none;">
+          <div class="no-results-content">
+            <i class="fas fa-search fa-3x"></i>
+            <h3>No resources found</h3>
+            <p>Try adjusting your search term or selecting a different category.</p>
+            <button id="resetFilters" class="btn btn-primary">Show All Resources</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resource Library -->
+    <section class="resource-library bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Bennett Hatchery Resource Library</h2>
+          <p>Access our exclusive collection of books, journals, and research papers</p>
+        </div>
+        
+        <div class="library-content">
+          <div class="library-image">
+            <img src="https://source.unsplash.com/random/600x400/?library,books" alt="Bennett Hatchery Resource Library">
+          </div>
+          <div class="library-info">
+            <p>The Bennett Hatchery Resource Library offers a curated collection of books, journals, research papers, and digital resources focused on entrepreneurship, innovation, and business development.</p>
+            
+            <h3>Library Resources Include:</h3>
+            <ul class="library-features">
+              <li><i class="fas fa-check-circle"></i> Business and entrepreneurship books</li>
+              <li><i class="fas fa-check-circle"></i> Industry reports and market research</li>
+              <li><i class="fas fa-check-circle"></i> Academic journals and publications</li>
+              <li><i class="fas fa-check-circle"></i> Case studies of successful startups</li>
+              <li><i class="fas fa-check-circle"></i> Digital access to premium databases</li>
+            </ul>
+            
+            <p>The library is available to all Bennett Hatchery members. Non-members can request access by contacting our team.</p>
+            
+            <div class="library-cta">
+              <a href="contact.html" class="btn btn-primary">Request Library Access</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner Resources -->
+    <section class="partner-resources">
+      <div class="container">
+        <div class="section-header">
+          <h2>Partner Resources</h2>
+          <p>Special resources and offers from our corporate and ecosystem partners</p>
+        </div>
+        
+        <div class="partner-resources-grid">
+          <div class="partner-resource">
+            <div class="partner-logo">
+              <img src="https://placehold.co/200x100?text=AWS" alt="Amazon Web Services">
+            </div>
+            <div class="partner-offer">
+              <h3>AWS Activate</h3>
+              <p>Up to $100,000 in AWS credits, technical support, and training for eligible startups.</p>
+              <a href="#" class="resource-link">Learn More <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <div class="partner-resource">
+            <div class="partner-logo">
+              <img src="https://placehold.co/200x100?text=Google" alt="Google for Startups">
+            </div>
+            <div class="partner-offer">
+              <h3>Google for Startups</h3>
+              <p>Access to Google Cloud credits, technical training, and business development resources.</p>
+              <a href="#" class="resource-link">Learn More <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <div class="partner-resource">
+            <div class="partner-logo">
+              <img src="https://placehold.co/200x100?text=Microsoft" alt="Microsoft for Startups">
+            </div>
+            <div class="partner-offer">
+              <h3>Microsoft for Startups</h3>
+              <p>Azure credits, development tools, and go-to-market support for qualified startups.</p>
+              <a href="#" class="resource-link">Learn More <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <div class="partner-resource">
+            <div class="partner-logo">
+              <img src="https://placehold.co/200x100?text=HubSpot" alt="HubSpot for Startups">
+            </div>
+            <div class="partner-offer">
+              <h3>HubSpot for Startups</h3>
+              <p>Up to 90% off HubSpot software for marketing, sales, and customer service.</p>
+              <a href="#" class="resource-link">Learn More <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Request Resources -->
+    <section class="request-resources bg-light">
+      <div class="container">
+        <div class="request-content">
+          <div class="request-text">
+            <h2>Can't Find What You Need?</h2>
+            <p>If you're looking for specific resources or support that you don't see listed here, we're happy to help. Our team can provide customized resources based on your startup's specific needs and challenges.</p>
+            <p>Fill out the resource request form, and our team will get back to you within 48 hours.</p>
+            <a href="contact.html" class="btn btn-primary">Request Resources</a>
+          </div>
+          <div class="request-image">
+            <img src="https://source.unsplash.com/random/600x400/?support,help" alt="Resource Support">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Take Your Startup to the Next Level?</h2>
+          <p>Join Bennett Hatchery and access all our resources, mentorship, and support.</p>
+          <a href="apply.html" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Bennett <span>Hatchery</span></h2>
+          <p>Nurturing innovation at Bennett University</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="startups.html">Startups</a></li>
+              <li><a href="apply.html">Apply</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="mentors.html">Mentors</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> Plot No 8-11, Tech Zone II, Greater Noida, UP 201310</li>
+              <li><i class="fas fa-phone"></i> +91-1800-103-8484</li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:hatchery@bennett.edu.in">hatchery@bennett.edu.in</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Bennett Hatchery. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="js/main.js"></script>
+  <script src="js/resources.js"></script>
+</body>
+</html>

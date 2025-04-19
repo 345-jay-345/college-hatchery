@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Bennett Hatchery</title>
+  <meta name="description" content="Frequently asked questions about Bennett Hatchery and our startup programs.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <h1>Bennett <span>Hatchery</span></h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to commonly asked questions about Bennett Hatchery</p>
+      </div>
+    </section>
+
+    <!-- FAQ Search -->
+    <section class="faq-search">
+      <div class="container">
+        <div class="search-container">
+          <input type="text" id="faqSearch" placeholder="Search for questions...">
+          <button id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories">
+      <div class="container">
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="all">All Categories</button>
+          <button class="category-tab" data-category="general">General</button>
+          <button class="category-tab" data-category="programs">Programs</button>
+          <button class="category-tab" data-category="application">Application Process</button>
+          <button class="category-tab" data-category="startups">Startups & Funding</button>
+          <button class="category-tab" data-category="facilities">Facilities & Resources</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content">
+      <div class="container">
+        <!-- No Results Message (Hidden by Default) -->
+        <div id="noResults" class="no-results" style="display: none;">
+          <div class="no-results-content">
+            <i class="fas fa-search fa-3x"></i>
+            <h3>No questions found</h3>
+            <p>Try adjusting your search term or selecting a different category.</p>
+            <button id="resetSearch" class="btn btn-primary">Reset Search</button>
+          </div>
+        </div>
+        
+        <!-- General FAQs -->
+        <div class="faq-category" id="general">
+          <h2 class="category-title">General Questions</h2>
+          
+          <div class="faq-item" data-category="general">
+            <div class="faq-question">
+              <h3>What is Bennett Hatchery?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Bennett Hatchery is the entrepreneurship and innovation hub at Bennett University. We support aspiring entrepreneurs and innovators by providing mentorship, resources, funding, and a collaborative community to help transform ideas into successful ventures.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="general">
+            <div class="faq-question">
+              <h3>Who can join Bennett Hatchery?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>While we prioritize Bennett University students and alumni, our programs are open to all entrepreneurs with innovative ideas and a commitment to building scalable businesses. We evaluate applications based on the strength of the idea, market potential, and team capabilities.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="general">
+            <div class="faq-question">
+              <h3>Is Bennett Hatchery only for tech startups?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>No, Bennett Hatchery supports startups across various sectors, including but not limited to technology, healthcare, education, finance, retail, and social entrepreneurship. We look for innovative ideas with potential for growth and impact, regardless of the industry.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="general">
+            <div class="faq-question">
+              <h3>How is Bennett Hatchery different from other incubators?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Bennett Hatchery offers a unique advantage through its connection to Bennett University's academic ecosystem. This provides access to faculty expertise, research facilities, and a talent pool of students. We also offer programs tailored to different stages of the entrepreneurial journey, from ideation to acceleration, with a focus on personalized mentorship and support.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="general">
+            <div class="faq-question">
+              <h3>Where is Bennett Hatchery located?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Bennett Hatchery is located on the Bennett University campus in Greater Noida, Uttar Pradesh. Our physical facilities include co-working spaces, meeting rooms, and specialized labs for product development.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Programs FAQs -->
+        <div class="faq-category" id="programs">
+          <h2 class="category-title">Programs</h2>
+          
+          <div class="faq-item" data-category="programs">
+            <div class="faq-question">
+              <h3>What programs does Bennett Hatchery offer?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Bennett Hatchery offers three main programs:</p>
+              <ul>
+                <li><strong>Ideation Program:</strong> A 4-week workshop for early-stage ideas that need refinement and validation.</li>
+                <li><strong>Incubation Program:</strong> A 6-month comprehensive support program for validated ideas ready to build and launch.</li>
+                <li><strong>Acceleration Program:</strong> A 3-month intensive program for existing startups looking to scale their operations.</li>
+              </ul>
+              <p>Each program is tailored to the specific needs of startups at different stages of development.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="programs">
+            <div class="faq-question">
+              <h3>How long are the programs?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>The Ideation Program runs for 4 weeks, the Incubation Program for 6 months, and the Acceleration Program for 3 months. However, successful startups often maintain a relationship with Bennett Hatchery beyond these formal program periods.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="programs">
+            <div class="faq-question">
+              <h3>What support do the programs provide?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Our programs provide various forms of support depending on the stage:</p>
+              <ul>
+                <li><strong>Ideation Program:</strong> Problem validation, market research support, business model development, and pitch preparation.</li>
+                <li><strong>Incubation Program:</strong> Workspace, mentorship, seed funding (up to ₹5 lakhs for selected startups), legal and technical support, and networking opportunities.</li>
+                <li><strong>Acceleration Program:</strong> Growth strategy development, investor connections, market expansion support, and advanced mentorship in specialized areas.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="programs">
+            <div class="faq-question">
+              <h3>Is there any cost to participate in the programs?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Our programs are offered at no monetary cost to participants. Instead, Bennett Hatchery may take a small equity stake (typically 2-5%) in startups accepted into the Incubation or Acceleration programs. The Ideation Program is completely free with no equity requirement.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="programs">
+            <div class="faq-question">
+              <h3>Do I need to attend in person, or can I participate remotely?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>While we encourage in-person participation to fully leverage our facilities and community, we understand that this may not always be possible. We offer hybrid options for many program components, allowing remote participation when necessary. However, some activities, particularly in the Incubation Program, may require on-site presence.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Application Process FAQs -->
+        <div class="faq-category" id="application">
+          <h2 class="category-title">Application Process</h2>
+          
+          <div class="faq-item" data-category="application">
+            <div class="faq-question">
+              <h3>How do I apply to Bennett Hatchery?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>You can apply by filling out the application form on our <a href="apply.html">Apply</a> page. The form asks for information about you, your team, your startup idea or venture, and what you hope to achieve through our programs.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="application">
+            <div class="faq-question">
+              <h3>What are the eligibility criteria for applying?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>While we welcome applications from all entrepreneurs, we look for:</p>
+              <ul>
+                <li>Innovative ideas with market potential</li>
+                <li>Committed and passionate founders</li>
+                <li>Solutions addressing real problems</li>
+                <li>Potential for growth and scalability</li>
+                <li>Team capability to execute the idea</li>
+              </ul>
+              <p>Bennett University students and alumni receive priority consideration, but this is not a requirement.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="application">
+            <div class="faq-question">
+              <h3>What documents do I need to submit with my application?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>The initial application requires completing the online form only. If you have a pitch deck, business plan, or prototype demos, you can provide links to these materials in the application. Additional documents may be requested during the review process or if you're shortlisted for an interview.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="application">
+            <div class="faq-question">
+              <h3>How long does the application process take?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Our initial review takes up to 2 weeks. If shortlisted, you'll be invited for an interview within the following week. The entire process from application to final decision typically takes 3-4 weeks.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="application">
+            <div class="faq-question">
+              <h3>What happens after I submit my application?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>After submission, your application will go through the following steps:</p>
+              <ol>
+                <li>Initial screening by our team</li>
+                <li>Detailed review by relevant mentors and program managers</li>
+                <li>Interview invitation for shortlisted applicants</li>
+                <li>Final selection decision</li>
+                <li>Offer and onboarding (if selected)</li>
+              </ol>
+              <p>You'll receive email updates at each stage of the process.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Startups & Funding FAQs -->
+        <div class="faq-category" id="startups">
+          <h2 class="category-title">Startups & Funding</h2>
+          
+          <div class="faq-item" data-category="startups">
+            <div class="faq-question">
+              <h3>Does Bennett Hatchery provide funding to startups?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, selected startups in our Incubation Program may receive seed funding of up to ₹5 lakhs in exchange for a small equity stake. Additionally, we connect promising startups with external investors, angel networks, and venture capital firms for follow-on funding.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="startups">
+            <div class="faq-question">
+              <h3>What equity stake does Bennett Hatchery take in startups?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>For startups receiving funding and comprehensive support through our Incubation or Acceleration Programs, Bennett Hatchery typically takes a 2-5% equity stake. The exact percentage depends on various factors, including the startup's stage, valuation, and the specific support package provided.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="startups">
+            <div class="faq-question">
+              <h3>Can I apply if my idea is still in the conceptual stage?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes! Our Ideation Program is specifically designed for early-stage ideas that need refinement and validation. We'll help you develop your concept, validate the problem-solution fit, and prepare for the next stage of development.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="startups">
+            <div class="faq-question">
+              <h3>Do I need to have a complete team to apply?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>While having a diverse team with complementary skills is beneficial, solo founders are also welcome to apply. If accepted, we can help connect you with potential co-founders or team members as needed. However, for the Incubation and Acceleration Programs, having key team members in place is generally preferred.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="startups">
+            <div class="faq-question">
+              <h3>What happens to my intellectual property (IP)?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>All intellectual property (IP) created by your startup remains the property of your startup. Bennett Hatchery does not claim ownership of your IP. We provide guidance on IP protection strategies and can connect you with legal experts for patent, trademark, or copyright filings.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Facilities & Resources FAQs -->
+        <div class="faq-category" id="facilities">
+          <h2 class="category-title">Facilities & Resources</h2>
+          
+          <div class="faq-item" data-category="facilities">
+            <div class="faq-question">
+              <h3>What facilities does Bennett Hatchery provide?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Bennett Hatchery provides various facilities including:</p>
+              <ul>
+                <li>Co-working space with high-speed internet</li>
+                <li>Meeting and conference rooms</li>
+                <li>Prototyping lab with 3D printers and basic electronics</li>
+                <li>Design thinking studio</li>
+                <li>Demo/presentation area</li>
+                <li>Access to university labs and research facilities (as applicable)</li>
+                <li>Resource library with entrepreneurship and business resources</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="facilities">
+            <div class="faq-question">
+              <h3>Can I use the facilities outside normal business hours?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, startups enrolled in our Incubation and Acceleration Programs receive 24/7 access to the co-working space through secure access cards. Specialized facilities like the prototyping lab may have more limited hours or require staff supervision.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="facilities">
+            <div class="faq-question">
+              <h3>What mentorship and expert support is available?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Bennett Hatchery has a network of over 30 mentors, including:</p>
+              <ul>
+                <li>Successful entrepreneurs and founders</li>
+                <li>Industry experts across various sectors</li>
+                <li>Bennett University faculty with specialized knowledge</li>
+                <li>Technical experts in areas like AI, blockchain, IoT, etc.</li>
+                <li>Functional experts in marketing, finance, legal, etc.</li>
+                <li>Investors and financial advisors</li>
+              </ul>
+              <p>Startups are matched with relevant mentors based on their specific needs and industry.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="facilities">
+            <div class="faq-question">
+              <h3>Does Bennett Hatchery offer legal, accounting, or other professional services?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>We provide basic guidance on legal, accounting, and regulatory matters through our mentor network. For specialized services, we have partnerships with law firms, accounting firms, and other service providers who offer discounted rates to our startups. These services include company registration, IP protection, tax compliance, and more.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="facilities">
+            <div class="faq-question">
+              <h3>Are there networking opportunities with industry and investors?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we regularly organize networking events, demo days, and industry meet-ups that connect our startups with potential customers, partners, and investors. We also facilitate introductions to our industry partners and investor networks when startups are ready for such connections.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="still-questions">
+      <div class="container">
+        <div class="questions-content">
+          <h2>Still Have Questions?</h2>
+          <p>Our team is happy to help. Reach out to us through any of the following channels:</p>
+          
+          <div class="contact-options">
+            <div class="contact-option">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email Us</h3>
+              <p><a href="mailto:hatchery@bennett.edu.in">hatchery@bennett.edu.in</a></p>
+            </div>
+            
+            <div class="contact-option">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h3>Call Us</h3>
+              <p>+91-1800-103-8484</p>
+            </div>
+            
+            <div class="contact-option">
+              <div class="contact-icon">
+                <i class="fas fa-comment-alt"></i>
+              </div>
+              <h3>Contact Form</h3>
+              <p><a href="contact.html">Send us a message</a></p>
+            </div>
+          </div>
+          
+          <div class="questions-cta">
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Start Your Entrepreneurial Journey?</h2>
+          <p>Apply to Bennett Hatchery and turn your innovative ideas into successful ventures.</p>
+          <a href="apply.html" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Bennett <span>Hatchery</span></h2>
+          <p>Nurturing innovation at Bennett University</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="startups.html">Startups</a></li>
+              <li><a href="apply.html">Apply</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="mentors.html">Mentors</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> Plot No 8-11, Tech Zone II, Greater Noida, UP 201310</li>
+              <li><i class="fas fa-phone"></i> +91-1800-103-8484</li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:hatchery@bennett.edu.in">hatchery@bennett.edu.in</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Bennett Hatchery. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="js/main.js"></script>
+  <script src="js/faq.js"></script>
+</body>
+</html>

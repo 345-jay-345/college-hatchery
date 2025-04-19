@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentors | Bennett Hatchery</title>
+  <meta name="description" content="Meet the experienced mentors guiding startups at Bennett Hatchery.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mentors.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <h1>Bennett <span>Hatchery</span></h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="mentors.html" class="active">Mentors</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Mentors</h1>
+        <p>Meet the industry experts and entrepreneurs guiding our startups to success</p>
+      </div>
+    </section>
+
+    <!-- Mentor Program Overview -->
+    <section class="mentor-overview">
+      <div class="container">
+        <div class="mentor-overview-content">
+          <div class="mentor-overview-text">
+            <h2>The Bennett Hatchery Mentorship Program</h2>
+            <p>Our mentors are the backbone of Bennett Hatchery, providing valuable guidance, industry insights, and connections to our startups. Each mentor brings years of experience across various domains and industries, offering personalized support to help founders navigate the challenges of building a successful business.</p>
+            <p>Through one-on-one mentoring sessions, workshops, and industry connections, our mentors help startups refine their business models, develop go-to-market strategies, secure funding, and scale their operations.</p>
+          </div>
+          <div class="mentor-overview-image">
+            <img src="https://source.unsplash.com/random/600x400/?mentoring,meeting" alt="Mentorship Session at Bennett Hatchery">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentor Filters -->
+    <section class="mentor-filters">
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-group">
+            <label for="expertiseFilter">Expertise:</label>
+            <select id="expertiseFilter" class="filter-select">
+              <option value="all">All Expertise</option>
+              <option value="business">Business Strategy</option>
+              <option value="technology">Technology</option>
+              <option value="marketing">Marketing</option>
+              <option value="finance">Finance</option>
+              <option value="product">Product Development</option>
+              <option value="legal">Legal</option>
+              <option value="industry">Industry Specific</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="industryFilter">Industry:</label>
+            <select id="industryFilter" class="filter-select">
+              <option value="all">All Industries</option>
+              <option value="tech">Technology</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="education">Education</option>
+              <option value="finance">Finance</option>
+              <option value="retail">Retail</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="agriculture">Agriculture</option>
+              <option value="energy">Energy</option>
+            </select>
+          </div>
+          
+          <div class="filter-group search-group">
+            <input type="text" id="mentorSearch" placeholder="Search mentors..." class="search-input">
+            <button id="searchButton" class="search-button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentors Grid -->
+    <section class="mentors-grid-section">
+      <div class="container">
+        <div class="mentors-grid" id="mentorsGrid">
+          <!-- Industry Mentors -->
+          <div class="mentor-card" data-expertise="business finance" data-industry="tech finance">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?businessman,indian" alt="Rajiv Mehta">
+            </div>
+            <div class="mentor-content">
+              <h3>Rajiv Mehta</h3>
+              <p class="mentor-title">Serial Entrepreneur & Angel Investor</p>
+              <p class="mentor-expertise">Business Strategy, Fundraising, Scaling</p>
+              <p class="mentor-bio">With 20+ years of experience in founding and scaling tech startups, Rajiv has successfully exited three ventures and now actively invests in early-stage startups.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mentor-card" data-expertise="marketing" data-industry="tech retail">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?businesswoman,indian" alt="Priya Sharma">
+            </div>
+            <div class="mentor-content">
+              <h3>Priya Sharma</h3>
+              <p class="mentor-title">Chief Marketing Officer, TechGrow</p>
+              <p class="mentor-expertise">Digital Marketing, Brand Strategy, Growth Hacking</p>
+              <p class="mentor-bio">Priya leads marketing at one of India's fastest-growing SaaS companies. She specializes in helping startups develop effective marketing strategies on limited budgets.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mentor-card" data-expertise="technology product" data-industry="tech">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?tech,man" alt="Vikram Singh">
+            </div>
+            <div class="mentor-content">
+              <h3>Vikram Singh</h3>
+              <p class="mentor-title">CTO, InnovateNow</p>
+              <p class="mentor-expertise">Software Architecture, Product Development, AI/ML</p>
+              <p class="mentor-bio">A technologist with expertise in building scalable platforms, Vikram helps startups make smart technology choices and build robust technical foundations.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mentor-card" data-expertise="finance" data-industry="finance tech">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?businessman,glasses" alt="Arun Kapoor">
+            </div>
+            <div class="mentor-content">
+              <h3>Arun Kapoor</h3>
+              <p class="mentor-title">Partner, Venture Capital Firm</p>
+              <p class="mentor-expertise">Venture Funding, Financial Modeling, Investment Strategy</p>
+              <p class="mentor-bio">With over 15 years in venture capital, Arun helps startups prepare for fundraising, structure deals, and develop investor relations strategies.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mentor-card" data-expertise="legal" data-industry="tech finance">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?lawyer,woman" alt="Neha Gupta">
+            </div>
+            <div class="mentor-content">
+              <h3>Neha Gupta</h3>
+              <p class="mentor-title">Startup Legal Counsel</p>
+              <p class="mentor-expertise">Intellectual Property, Contracts, Compliance</p>
+              <p class="mentor-bio">A specialist in startup law, Neha helps founders navigate legal challenges from incorporation to fundraising, protecting IP, and regulatory compliance.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mentor-card" data-expertise="industry product" data-industry="healthcare tech">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?doctor" alt="Dr. Suresh Patel">
+            </div>
+            <div class="mentor-content">
+              <h3>Dr. Suresh Patel</h3>
+              <p class="mentor-title">Founder, HealthTech Solutions</p>
+              <p class="mentor-expertise">Healthcare Innovation, MedTech, Regulatory Strategy</p>
+              <p class="mentor-bio">As both a physician and entrepreneur, Dr. Patel provides unique insights for healthcare startups navigating the complex healthcare ecosystem.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mentor-card" data-expertise="industry business" data-industry="education tech">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?professor,woman" alt="Dr. Anjali Desai">
+            </div>
+            <div class="mentor-content">
+              <h3>Dr. Anjali Desai</h3>
+              <p class="mentor-title">EdTech Entrepreneur & Academic</p>
+              <p class="mentor-expertise">Education Technology, Academic Partnerships, Learning Science</p>
+              <p class="mentor-bio">With a background in both academia and entrepreneurship, Dr. Desai helps education startups develop pedagogically sound products and navigate institutional partnerships.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mentor-card" data-expertise="business marketing" data-industry="retail tech">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?entrepreneur,man" alt="Amit Joshi">
+            </div>
+            <div class="mentor-content">
+              <h3>Amit Joshi</h3>
+              <p class="mentor-title">Founder & CEO, RetailTech Innovations</p>
+              <p class="mentor-expertise">Retail Technology, Omnichannel Strategy, Supply Chain</p>
+              <p class="mentor-bio">Amit's expertise in retail technology helps startups understand the retail landscape and develop solutions that address real industry challenges.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Academic Mentors -->
+          <div class="mentor-card" data-expertise="technology" data-industry="tech">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?professor,man" alt="Prof. Rakesh Kumar">
+            </div>
+            <div class="mentor-content">
+              <h3>Prof. Rakesh Kumar</h3>
+              <p class="mentor-title">Professor of Computer Science, Bennett University</p>
+              <p class="mentor-expertise">AI, Machine Learning, Computer Vision</p>
+              <p class="mentor-bio">A leading researcher in artificial intelligence, Prof. Kumar helps startups leverage cutting-edge AI technologies in their products and services.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-google"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mentor-card" data-expertise="business" data-industry="tech finance">
+            <div class="mentor-image">
+              <img src="https://source.unsplash.com/random/300x300/?professor,woman" alt="Dr. Meena Sharma">
+            </div>
+            <div class="mentor-content">
+              <h3>Dr. Meena Sharma</h3>
+              <p class="mentor-title">Professor of Entrepreneurship, Bennett School of Management</p>
+              <p class="mentor-expertise">Business Model Innovation, Entrepreneurial Strategy</p>
+              <p class="mentor-bio">Dr. Sharma brings academic rigor to business model development, helping startups build sustainable business models based on sound theoretical frameworks.</p>
+              <div class="mentor-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-google"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="noResults" class="no-results" style="display: none;">
+          <div class="no-results-content">
+            <i class="fas fa-search fa-3x"></i>
+            <h3>No mentors found</h3>
+            <p>Try adjusting your filters or search term.</p>
+            <button id="resetFilters" class="btn btn-primary">Reset Filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentorship Process -->
+    <section class="mentorship-process bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Mentorship Process</h2>
+          <p>How we connect startups with the right mentors</p>
+        </div>
+        
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Needs Assessment</h3>
+              <p>We begin by understanding your startup's specific needs, challenges, and goals to identify the areas where mentorship would be most valuable.</p>
+            </div>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Mentor Matching</h3>
+              <p>Based on your needs, we match you with mentors who have relevant expertise and experience in your industry or domain.</p>
+            </div>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Structured Sessions</h3>
+              <p>Regular one-on-one mentoring sessions are scheduled with clear objectives and action items to ensure productive engagement.</p>
+            </div>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Progress Tracking</h3>
+              <p>We track your progress against defined goals and adjust the mentorship plan as your startup evolves and faces new challenges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentor Testimonials -->
+    <section class="mentor-testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Mentor Perspectives</h2>
+          <p>Hear from our mentors about their experiences guiding startups</p>
+        </div>
+        
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <div class="testimonial-content">
+              <p class="testimonial-quote">"Mentoring at Bennett Hatchery has been incredibly rewarding. Seeing founders take your advice and transform their businesses is a unique joy. The talent and drive I've witnessed in these young entrepreneurs gives me great hope for India's startup ecosystem."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-image">
+                  <img src="https://source.unsplash.com/random/100x100/?businessman,indian" alt="Rajiv Mehta">
+                </div>
+                <span class="testimonial-author-name">Rajiv Mehta</span>
+                <span class="testimonial-author-title">Serial Entrepreneur & Angel Investor</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <p class="testimonial-quote">"The energy and innovation at Bennett Hatchery is contagious. As a mentor, I've found that I often learn as much from the founders as they learn from me. The questions they ask force me to rethink established practices and stay current with emerging trends."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-image">
+                  <img src="https://source.unsplash.com/random/100x100/?businesswoman,indian" alt="Priya Sharma">
+                </div>
+                <span class="testimonial-author-name">Priya Sharma</span>
+                <span class="testimonial-author-title">Chief Marketing Officer, TechGrow</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <p class="testimonial-quote">"Bridging the gap between academic research and practical startup applications has been the most fulfilling aspect of my mentorship at Bennett Hatchery. I've been able to help founders implement cutting-edge technologies in ways that create real business value."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-image">
+                  <img src="https://source.unsplash.com/random/100x100/?professor,man" alt="Prof. Rakesh Kumar">
+                </div>
+                <span class="testimonial-author-name">Prof. Rakesh Kumar</span>
+                <span class="testimonial-author-title">Professor of Computer Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slider-controls">
+          <button id="prevTestimonial" class="slider-btn"><i class="fas fa-arrow-left"></i></button>
+          <button id="nextTestimonial" class="slider-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Become a Mentor -->
+    <section class="become-mentor bg-light">
+      <div class="container">
+        <div class="become-mentor-content">
+          <div class="become-mentor-text">
+            <h2>Become a Mentor</h2>
+            <p>Share your expertise and experience with the next generation of entrepreneurs. Join our mentor network and help shape the future of innovation at Bennett University.</p>
+            
+            <h3>Why Become a Mentor?</h3>
+            <ul class="benefits-list">
+              <li><i class="fas fa-check-circle"></i> Give back to the entrepreneurial ecosystem</li>
+              <li><i class="fas fa-check-circle"></i> Stay connected with emerging technologies and business models</li>
+              <li><i class="fas fa-check-circle"></i> Expand your professional network</li>
+              <li><i class="fas fa-check-circle"></i> Potential investment and partnership opportunities</li>
+              <li><i class="fas fa-check-circle"></i> Personal and professional growth</li>
+            </ul>
+            
+            <h3>Mentor Expectations:</h3>
+            <p>We ask our mentors to commit to at least 4 hours per month for a minimum of 6 months. This includes one-on-one mentoring sessions, group workshops, and occasional events.</p>
+            
+            <a href="contact.html" class="btn btn-primary">Apply to Become a Mentor</a>
+          </div>
+          <div class="become-mentor-image">
+            <img src="https://source.unsplash.com/random/600x400/?mentoring,coaching" alt="Mentoring at Bennett Hatchery">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Get Mentored by Industry Experts?</h2>
+          <p>Apply to Bennett Hatchery and gain access to our network of experienced mentors.</p>
+          <a href="apply.html" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Bennett <span>Hatchery</span></h2>
+          <p>Nurturing innovation at Bennett University</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="startups.html">Startups</a></li>
+              <li><a href="apply.html">Apply</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="mentors.html">Mentors</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> Plot No 8-11, Tech Zone II, Greater Noida, UP 201310</li>
+              <li><i class="fas fa-phone"></i> +91-1800-103-8484</li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:hatchery@bennett.edu.in">hatchery@bennett.edu.in</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Bennett Hatchery. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="js/main.js"></script>
+  <script src="js/mentors.js"></script>
+</body>
+</html>

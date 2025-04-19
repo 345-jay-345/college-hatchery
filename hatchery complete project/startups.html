@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startups | Bennett Hatchery</title>
+  <meta name="description" content="Discover the innovative startups incubated at Bennett Hatchery.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/startups.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <h1>Bennett <span>Hatchery</span></h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="startups.html" class="active">Startups</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Startups</h1>
+        <p>Discover the innovative ventures incubated at Bennett Hatchery</p>
+      </div>
+    </section>
+
+    <!-- Startup Filters -->
+    <section class="startup-filters">
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-group">
+            <label for="categoryFilter">Category:</label>
+            <select id="categoryFilter" class="filter-select">
+              <option value="all">All Categories</option>
+              <option value="edtech">EdTech</option>
+              <option value="healthtech">HealthTech</option>
+              <option value="fintech">FinTech</option>
+              <option value="agritech">AgriTech</option>
+              <option value="ecommerce">E-Commerce</option>
+              <option value="ai">AI & ML</option>
+              <option value="iot">IoT</option>
+              <option value="sustainability">Sustainability</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="stageFilter">Stage:</label>
+            <select id="stageFilter" class="filter-select">
+              <option value="all">All Stages</option>
+              <option value="idea">Idea Stage</option>
+              <option value="mvp">MVP</option>
+              <option value="early">Early Traction</option>
+              <option value="growth">Growth</option>
+              <option value="scaling">Scaling</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="programFilter">Program:</label>
+            <select id="programFilter" class="filter-select">
+              <option value="all">All Programs</option>
+              <option value="ideation">Ideation</option>
+              <option value="incubation">Incubation</option>
+              <option value="acceleration">Acceleration</option>
+            </select>
+          </div>
+          
+          <div class="filter-group search-group">
+            <input type="text" id="startupSearch" placeholder="Search startups..." class="search-input">
+            <button id="searchButton" class="search-button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Startups Grid -->
+    <section class="startups-showcase">
+      <div class="container">
+        <div class="startups-grid" id="startupsGrid">
+          <!-- Startup cards will be loaded from JS -->
+        </div>
+        
+        <div id="noResults" class="no-results" style="display: none;">
+          <div class="no-results-content">
+            <i class="fas fa-search fa-3x"></i>
+            <h3>No startups found</h3>
+            <p>Try adjusting your filters or search term.</p>
+            <button id="resetFilters" class="btn btn-primary">Reset Filters</button>
+          </div>
+        </div>
+        
+        <div class="pagination" id="pagination">
+          <!-- Pagination will be added by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Startups -->
+    <section class="featured-startups bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Success Stories</h2>
+          <p>Highlighting some of our most successful startups</p>
+        </div>
+        
+        <div class="featured-startup-grid">
+          <!-- EduSpark -->
+          <div class="featured-startup" id="eduspark">
+            <div class="featured-startup-content">
+              <div class="featured-startup-text">
+                <div class="startup-logo">
+                  <img src="https://placehold.co/150x60?text=EduSpark" alt="EduSpark Logo">
+                </div>
+                <h3>EduSpark</h3>
+                <p class="startup-category">EdTech | Founded 2020</p>
+                <p>EduSpark is revolutionizing the way students prepare for competitive exams with their AI-powered adaptive learning platform. Starting as a simple idea in our Ideation Workshop, they've grown to serve over 50,000 students across India.</p>
+                
+                <h4>Key Achievements:</h4>
+                <ul class="achievements-list">
+                  <li><i class="fas fa-trophy"></i> Raised ₹1.5 crore in Series A funding</li>
+                  <li><i class="fas fa-trophy"></i> Winner of the National EdTech Challenge 2022</li>
+                  <li><i class="fas fa-trophy"></i> Expanded to 5 states with 20+ educational partnerships</li>
+                </ul>
+                
+                <div class="startup-founders">
+                  <div class="founder">
+                    <img src="https://source.unsplash.com/random/100x100/?portrait,woman" alt="Ananya Sharma">
+                    <p>Ananya Sharma, CEO</p>
+                  </div>
+                  <div class="founder">
+                    <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Rohan Verma">
+                    <p>Rohan Verma, CTO</p>
+                  </div>
+                </div>
+                
+                <div class="startup-cta">
+                  <a href="https://example.com/eduspark" target="_blank" class="btn btn-primary">Visit Website</a>
+                </div>
+              </div>
+              <div class="featured-startup-image">
+                <img src="https://source.unsplash.com/random/600x400/?education,technology" alt="EduSpark Platform">
+              </div>
+            </div>
+          </div>
+          
+          <!-- MediConnect -->
+          <div class="featured-startup" id="mediconnect">
+            <div class="featured-startup-content">
+              <div class="featured-startup-text">
+                <div class="startup-logo">
+                  <img src="https://placehold.co/150x60?text=MediConnect" alt="MediConnect Logo">
+                </div>
+                <h3>MediConnect</h3>
+                <p class="startup-category">HealthTech | Founded 2021</p>
+                <p>MediConnect is bridging the healthcare divide between urban and rural India through their telemedicine platform. They enable patients in remote areas to connect with specialists for consultations, diagnoses, and follow-ups.</p>
+                
+                <h4>Key Achievements:</h4>
+                <ul class="achievements-list">
+                  <li><i class="fas fa-trophy"></i> Serving 100+ rural communities across North India</li>
+                  <li><i class="fas fa-trophy"></i> Partnered with 200+ medical specialists</li>
+                  <li><i class="fas fa-trophy"></i> Received grant funding from the Ministry of Health</li>
+                </ul>
+                
+                <div class="startup-founders">
+                  <div class="founder">
+                    <img src="https://source.unsplash.com/random/100x100/?portrait,man,indian" alt="Dr. Vikram Desai">
+                    <p>Dr. Vikram Desai, CEO</p>
+                  </div>
+                  <div class="founder">
+                    <img src="https://source.unsplash.com/random/100x100/?portrait,woman,indian" alt="Neha Gupta">
+                    <p>Neha Gupta, COO</p>
+                  </div>
+                </div>
+                
+                <div class="startup-cta">
+                  <a href="https://example.com/mediconnect" target="_blank" class="btn btn-primary">Visit Website</a>
+                </div>
+              </div>
+              <div class="featured-startup-image">
+                <img src="https://source.unsplash.com/random/600x400/?healthcare,telemedicine" alt="MediConnect Platform">
+              </div>
+            </div>
+          </div>
+          
+          <!-- GreenHarvest -->
+          <div class="featured-startup" id="greenharvest">
+            <div class="featured-startup-content">
+              <div class="featured-startup-text">
+                <div class="startup-logo">
+                  <img src="https://placehold.co/150x60?text=GreenHarvest" alt="GreenHarvest Logo">
+                </div>
+                <h3>GreenHarvest</h3>
+                <p class="startup-category">AgriTech | Founded 2019</p>
+                <p>GreenHarvest is transforming Indian agriculture with IoT-based smart farming solutions. Their sensors and data analytics help farmers optimize water usage, monitor soil health, and increase crop yields.</p>
+                
+                <h4>Key Achievements:</h4>
+                <ul class="achievements-list">
+                  <li><i class="fas fa-trophy"></i> Deployed in 500+ farms across 5 states</li>
+                  <li><i class="fas fa-trophy"></i> Achieved average 30% increase in crop yields</li>
+                  <li><i class="fas fa-trophy"></i> International partnership with Israeli AgriTech firms</li>
+                </ul>
+                
+                <div class="startup-founders">
+                  <div class="founder">
+                    <img src="https://source.unsplash.com/random/100x100/?portrait,man,rural" alt="Arjun Singh">
+                    <p>Arjun Singh, CEO</p>
+                  </div>
+                  <div class="founder">
+                    <img src="https://source.unsplash.com/random/100x100/?portrait,woman,glasses" alt="Priya Mehta">
+                    <p>Priya Mehta, CTO</p>
+                  </div>
+                </div>
+                
+                <div class="startup-cta">
+                  <a href="https://example.com/greenharvest" target="_blank" class="btn btn-primary">Visit Website</a>
+                </div>
+              </div>
+              <div class="featured-startup-image">
+                <img src="https://source.unsplash.com/random/600x400/?agriculture,technology" alt="GreenHarvest Solution">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Startups Stats -->
+    <section class="startups-stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Startups Incubated</p>
+          </div>
+          <div class="stat-item">
+            <h3>₹10 Cr+</h3>
+            <p>Total Funding Raised</p>
+          </div>
+          <div class="stat-item">
+            <h3>70%</h3>
+            <p>Success Rate</p>
+          </div>
+          <div class="stat-item">
+            <h3>200+</h3>
+            <p>Jobs Created</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Us CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Join Our Startup Community?</h2>
+          <p>Apply to Bennett Hatchery and turn your innovative ideas into a successful venture.</p>
+          <a href="apply.html" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Bennett <span>Hatchery</span></h2>
+          <p>Nurturing innovation at Bennett University</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="startups.html">Startups</a></li>
+              <li><a href="apply.html">Apply</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="mentors.html">Mentors</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> Plot No 8-11, Tech Zone II, Greater Noida, UP 201310</li>
+              <li><i class="fas fa-phone"></i> +91-1800-103-8484</li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:hatchery@bennett.edu.in">hatchery@bennett.edu.in</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Bennett Hatchery. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="js/main.js"></script>
+  <script src="js/startups.js"></script>
+</body>
+</html>
